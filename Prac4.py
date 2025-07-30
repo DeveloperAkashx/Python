@@ -1,5 +1,8 @@
-for i in range(1,6):
+list = [11,23,3,46,8,3345,5768,8,7,4]
 
-    if(i == 3):
-        print(i)
-        break
+
+def list_el(list):
+    for i in list:
+        print(i, end=" ")
+
+list_el(list)

@@ -1,8 +1,10 @@
-# for i in range(1,5,1):
-#     print(i, end=" ")
+dict = {}
 
-# for i in range(101):
-#     print("Hello",i ,sep="")
+for i in range(3):
+    sub = input("Enter Sub name : ")
+    marks = int(input("Enter the marks: "))
 
-for i in range(100,0,-1):
-    print(i ,sep="")
+    # dict[sub] = marks
+    dict.update({sub: marks})
+    
+print(dict)

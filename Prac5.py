@@ -1,8 +1,6 @@
-num = int(input("Enter the number: "))
-sum = 0
-i=1
-while(i<=num):
-    sum+=i
-    i+=1
 
-print(f"Sum of Number is {sum}")
+def mysence(city="kolhapur"):
+    print("I'm From "+ city)
+
+mysence()
+mysence("Sangli") 
