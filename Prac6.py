@@ -1,6 +1,6 @@
-num = int(input("Enter the number: "))
-fac = 1
-for i in range(1,num+1):
-    fac = fac * i
+def usd():
+    usdt = int(input("Enter the amount : "))
+    inr = usdt*85
+    print(inr)
 
-print(f"Factorial of Number is {fac}")
+usd()
