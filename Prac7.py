@@ -1,7 +1,10 @@
-movie1 = input("Enter the Fav movies: ")
-movie2 = input("Enter the Fav movies: ")
-movie3 = input("Enter the Fav movies: ")
+def factorial(n):
+    if n < 0:
+        return "Factorial not defined for negative numbers."
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
 
-arr = [movie1,movie2,movie3]
-
-print(arr)
+num = int(input("Enter a number: "))
+print(f"Factorial of {num} is: {factorial(num)}")
