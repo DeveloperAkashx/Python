@@ -1,4 +1,7 @@
-set = {"Python","java","C++","Python","javascript","java","Python","java","C++","C"}
+myFile = open("Demo.txt","w")
+myFile.write("\nRocker")
+myFile.close()
 
-print(set)
-print(len(set))
+myFile = open("Demo.txt","a")
+myFile.write("\nnow")
+myFile.close()
