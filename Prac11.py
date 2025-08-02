@@ -1,9 +1,8 @@
-tuple = ["C","D","A","A","B"]
+def sum_natural(n):
+    if n == 1:
+        return 1
+    else:
+        return n + sum_natural(n - 1)
 
-count = tuple.count("A")
-
-print(count)
-
-list = tuple.sort()
-
-print(list)
+n = int(input("Enter a number: "))
+print("Sum of first", n, "natural numbers is:", sum_natural(n))
