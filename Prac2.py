@@ -1,28 +1,12 @@
-#Functions
+class Student:
+    college_name = "DKTE"
 
-def cal_sum(a,b):
-    sum = a+b
-    print(sum)
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-cal_sum(10,20)
-cal_sum(30,90)
+s1 = Student("Akash",20)
+print(s1.name, s1.age, s1.college_name)
 
-
-def cal_mul(a,b):
-    mul = a*b
-    print(mul)
-
-cal_mul(10,66)
-
-def cal_summ(a=5,b=6):
-    sum = a+b
-    print(sum)
-    return
-
-cal_summ()
-
-def cal_summx(a=5,b=1):
-    print(a+b)
-    return
-
-cal_summx()
+s2 = Student("Viraj",18)
+print(s2.name, s2.age, s2.college_name)
