@@ -1,10 +1,15 @@
-dict = {}
+#class & object
 
-for i in range(3):
-    sub = input("Enter Sub name : ")
-    marks = int(input("Enter the marks: "))
+class Car:
+    # brand = "BMW"
 
-    # dict[sub] = marks
-    dict.update({sub: marks})
-    
-print(dict)
+    def __init__(self):
+        print("Student obj has been created")
+
+    def start(self):
+        print(self)
+
+car1 = Car()
+print(car1)
+
+car1.start()
