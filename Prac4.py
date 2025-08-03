@@ -1,8 +1,22 @@
-list = [11,23,3,46,8,3345,5768,8,7,4]
+class Student:
 
+    
+    def __init__(self, name , marks):
+        self.name = name
+        self.marks = marks
 
-def list_el(list):
-    for i in list:
-        print(i, end=" ")
+    def student_info(self):
+        print(f"Name = {self.name}")
+        print(f"Marks = {self.marks}")
 
-list_el(list)
+    def avg(self):
+        sum = 0
+        for i in self.marks:
+            sum += i
+            avg = sum/3
+            return avg
+
+s1 = Student("Akash",[90,80,70])
+ans = s1.avg()
+
+print(f"{s1.name}s avg marks is {ans}")
